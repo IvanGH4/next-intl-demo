@@ -4,6 +4,8 @@ import { routing } from "./i18n/routing";
 import path from "path";
 
 export default async function middleware(request: NextRequest) {
+  console.log('Middleware');
+  
   // Create and call the next-intl middleware to handle locale
   const handleI18nRouting = createMiddleware(routing);
 
